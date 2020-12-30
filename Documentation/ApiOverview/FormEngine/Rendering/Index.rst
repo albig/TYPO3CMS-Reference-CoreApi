@@ -228,9 +228,11 @@ This API is the substitution of the old "TCA wizards array" and has been introdu
 
 FieldInformation
   Additional information. In elements, their output is shown between the field label and the element itself. They can
-  not add functionality, but only simple and restricted HTML strings. No buttons, no images. An example usage could be
-  an extension that auto-translates a field content and outputs an information like "Hey, this field was auto-filled
-  for you by an automatic translation wizard. Maybe you want to check the content".
+  not add functionality, but only simple and restricted HTML strings. No buttons, no images. The only supported HTML 
+  tags are :html:`<a>`:html:`<br>`:html:`<br/>`:html:`<div>`:html:`<em>`:html:`<i>`:html:`<p>`:html:`<strong>`
+  :html:`<span>`:html:`<code>`. An example usage could be an extension that auto-translates a field content and 
+  outputs an information like "Hey, this field was auto-filled for you by an automatic translation wizard. 
+  Maybe you want to check the content".
 
 FieldWizard
   Wizards shown below the element. "enrich" an element with additional functionality. The localization wizard and
